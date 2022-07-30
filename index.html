@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/Logo Kairós.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+    </style>
+    <title>Eneagrama Kairos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="imagenes/Logo Kairós.png" alt="Logo"height="150" width="230">
+        <h1>TALLER DE ENEAGRAMA</h1>
+        <a href="#enlace" class="inscripcion">Inscripción</a> 
+        </div>
+        <i class="fa-solid fa-bars" id="barrita"></i>
+        <nav class="barra">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./El Eneagrama.html">El Eneagrama</a></li>
+                <li><a href="./Cursos.html">Cursos</a></li>
+                <li><a href="./Frases.html">Frases</a></li>
+                <li><a href="./Comentarios.html">Comentarios</a></li>
+            </ul>
+        </nav>
+        <img src="imagenes/eneagrama.png" alt="eneagrama" class="dibujo">
+    </header>
+    <main>
+        <h2>Quienes Somos</h2>
+        <img src="imagenes/nosotras.png" alt="Nosotras" height="300" width="300">
+        <p>Somos <strong>Guille Moreyra</strong> y <strong>Vero Heredia</strong>. Hace varios años somos buscadoras de ese •bienestar• , estar bien aquí y ahora.
+        Cursamos la Diplomatura en eneagrama y gestión del talento, con Roberto Pérez y Sol Millán en el 2019.
+        Somos acompañantes espirituales, engrasadas del Centro de Espiritualidad Santa María.
+        En nuestros talleres complementamos todo lo que hemos aprendido a lo largo de estos años de formación.</p>
+    </main>
+    <section>    
+        <h2>Proximo Curso</h2>
+        <table border="3" cellspacing="5" cellpadding="5">
+            <tr>
+                <th>CUANDO</th>
+                <th>DONDE</th>
+                <th>DIAS</th>
+            </tr>
+            <tr>
+                <td>1 de Agosto</td>
+                <td>ONLINE</td>
+                <td>Martes y Jueves 19hs Argentina</td>
+            </tr>
+        </table>
+        <aside>
+            <h3>¿Ya te Inscribiste?</h3>
+            <input type="radio" name="uno">
+            <label for="">Si</label>
+            <input type="radio" name="uno">
+            <label for="">No</label>
+        </aside>
+    </section>
+</body>
+<footer>
+    <a id="enlace"></a>
+    <h4>Mas Informacion</h4>
+    <form action="enviar.php" method="post" enctype="text/plain" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" required><br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" required><br>
+        <label for="celular">Celular:</label>
+        <input type="text" name="celular" required><br>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo">
+        <label for="sexo">Mujer</label>
+        <input type="radio" name="sexo">
+        <label for="sexo">Hombre</label>
+        <input type="radio" name="sexo">
+        <label for="sexo">Sin Especificar</label><br><br>   
+        <label for="comentarios">¿Tenes conocimientos sobre esta herramienta?:</label><br>
+        <textarea name="comentarios" id="" cols="" rows="5" placeholder="Escribe tu comentario"></textarea><br>
+        <label for="comentarios">Expectativas:</label><br>
+        <textarea name="comentarios" id="" cols="" rows="5" placeholder="Escribe tu comentario"></textarea><br>
+        <input type="button" value="Enviar" id="enviar">
+    </form>
+    <div class="redes">
+        <a href="https://www.instagram.com/eneagramakairos/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>  
+</footer>
+</html>
