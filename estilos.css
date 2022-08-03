@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: kalam;
 }
 header{
     background-color: #b2a16f;
@@ -70,21 +71,22 @@ i{
     float: right;
 }
 main{
-    background-color: #e5e8c1;
+    background-color: #929762;
     margin-top: 0;
     height: auto;
     width: auto;
     font-family: kalam;
+    padding-bottom: 30px;
 }
 main h2{
     display: flex;
     justify-content: center;
     padding-top: 20px;
     font-size: 30px;
-    color: #5c6244;
     text-align: left;
     text-transform: uppercase;
     text-decoration: underline;
+    font-family: kalam;
 }
 main img{
     float: left;
@@ -93,10 +95,12 @@ main img{
     padding-top: 0;
 }
 main p{
-    font-size: large;
-    text-align: justify;
     margin-top: 60px;
-    padding-bottom: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 section{
     height: 350px;
@@ -202,15 +206,39 @@ label{
 .instagram:hover{
     color: black;
 }
-/* seccion 2 */
 article{
-    background-color: #414434;
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: auto;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
-article h2{
-    font-family: kalam;
+article h4{
+    padding-top: 25px;
+    font-size: 23px;
+}
+article ul li{
     font-size: 20px;
+}
+article footer{
+    height: auto;
+    width: 100%;
+    background-color: #5c6244;
+    margin-left: 0 auto;
+    float: left;
+    font-family: kalam;
+    padding-top: 20px;
+}
+aside{
+    background-color: rgba(159, 159, 167, 0.308);
+    padding: 30px;
+}
+aside h3{
+    font-size: 30px;
 }
 .galeria{
     min-height: 600px;
@@ -218,11 +246,36 @@ article h2{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 200px);
-    grid-gap:10px
+    grid-gap:10px;
 }
 .item{
     border-radius: 5px;
     border: #000 solid 5px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+}
+.item .texto{
+    opacity: 0;
+    visibility: 0;
+    transition: 0.7s;
+}
+.item:hover{
+    font-size: 25px;
+    transition: all 0.7s;
+    transform: scale(1.05);
+    text-shadow: 5px 5px 5px #000;
+}
+.item .texto:hover{
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    color: white;
+    margin: 20px;
 }
 .item1{
     background-image: url(./imagenes/enea\ \ 1.jpg);
