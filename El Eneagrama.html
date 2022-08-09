@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/Logo Kairós.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
@@ -14,55 +16,83 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="imagenes/Logo Kairós.png" alt="Logo" height="125" width="210">
-            <h1>El Eneagrama</h1>
-        </div>
-        <i class="fa-solid fa-bars"id="barrita"></i>
-        <nav class="barra">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#">El Eneagrama</a></li>
-            <li><a href="./Cursos.html">Cursos</a></li>
-            <li><a href="./Frases.html">Frases</a></li>
-            <li><a href="./Comentarios.html">Comentarios</a></li>
-        </ul>
+        <!-- comienza mi navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/Logo Kairós.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">El Eneagrama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Frases.html">Frases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comentarios.html">Comentarios</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+        <!-- termina mi navbar -->
+    <div class="container-fluid">
+        <h1>El Eneagrama</h1>
+    </div>
     <main>
-        <h2>Que es el Eneagrama</h2>
+        <h2>¿Que es?</h2>
         <p>Es una herramienta de autoconocimiento. Se trata de un SIMBOLO con 9 esencias básicas diferentes de la tipología humana con la que cada uno nace. Esta esencia es la lente con la que vemos y sentimos la vida. El eneagrama nos permite descubrir cuál es nuestra esencia para poder desarrollarla hacia la mejor versión de nosotros mismos y así poder armonizar y equilibrar nuestra vida.</p>
     </main>
     <article>
-        <h2>Eneatipos</h2>
+        <h2>Eneatipos</h4>
+        <img src="imagenes/2.png" alt="" height="500px" width="500px">
         <div class="galeria">
             <div class="item item1">
-                <div class="texto"><h3>El Organizador:</h3><p>Ordenado, racional, controlador, estructurado, confiable y perfeccionista.</p></div></div>
+                <div class="texto"><h3>1 El Organizador:</h3><p>Ordenado, racional, controlador, estructurado, confiable y perfeccionista.</p></div></div>
             <div class="item item2">
-                <div class="texto"><h3>El Servidor:</h3><p>Afectuoso, generoso, dominante, exagerado, sociable y empático.</p></div></div>
+                <div class="texto"><h3>2 El Servidor:</h3><p>Afectuoso, generoso, dominante, exagerado, sociable y empático.</p></div></div>
             <div class="item item3">
-                <div class="texto"><h3>El Realizador:</h3><p>Eficiente, pretencioso, emprendedor, enérgico, práctico y competitivo</p></div></div>
+                <div class="texto"><h3>3 El Realizador:</h3><p>Eficiente, pretencioso, emprendedor, enérgico, práctico y competitivo</p></div></div>
             <div class="item item4">
-                <div class="texto"><h3>El Creador:</h3><p>Auténtico, introspectivo, fatalista, sensible, excéntrico y compasivo</p></div></div>
+                <div class="texto"><h3>4 El Creador:</h3><p>Auténtico, introspectivo, fatalista, sensible, excéntrico y compasivo</p></div></div>
             <div class="item item5">
-                <div class="texto"><h3>El Observador:</h3><p>Analítico, sabio, solitario, perceptivo, preciso y callado</p></div></div>
+                <div class="texto"><h3>5 El Observador:</h3><p>Analítico, sabio, solitario, perceptivo, preciso y callado</p></div></div>
             <div class="item item6">
-                <div class="texto"><h3>El Colaborador:</h3><p>Leal, indeciso, responsable, desconfiado, correcto y dedicado</p></div></div>
+                <div class="texto"><h3>6 El Colaborador:</h3><p>Leal, indeciso, responsable, desconfiado, correcto y dedicado</p></div></div>
             <div class="item item7">
-                <div class="texto"><h3>El Animador:</h3><p>Espontáneo, encantador, disperso, curioso, inquieto y divertido</p></div></div>
+                <div class="texto"><h3>7 El Animador:</h3><p>Espontáneo, encantador, disperso, curioso, inquieto y divertido</p></div></div>
             <div class="item item8">
-                <div class="texto"><h3>El Luchador:</h3><p>Justo, enérgico, dominante, protector, seguro de sí y autoritario</p></div></div>
+                <div class="texto"><h3>8 El Luchador:</h3><p>Justo, enérgico, dominante, protector, seguro de sí y autoritario</p></div></div>
             <div class="item item9">
-                <div class="texto"><h3>El Pacificador:</h3><p>Paciente, conciliador, tímido, diplomático, pasivo y amable</p></div></div>
+                <div class="texto"><h3>9 El Pacificador:</h3><p>Paciente, conciliador, tímido, diplomático, pasivo y amable</p></div></div>
         </div>
     </article>
 </body>
 <footer>
-    <h4>Mas Info</h4>
-    <a href="./index.html#enlace" class="inscripcion">Inscripcion</a>
+    <h4>Mas Info</h4><br>
+    <a href="./index.html#enlace" class="inscripcion2">Inscripcion</a>
     <div class="redes">
         <a href="https://www.instagram.com/eneagramakairos/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
         <i class="fa-brands fa-whatsapp"></i>
-    </div>  
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script> 
 </footer>
 </html>

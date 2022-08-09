@@ -4,65 +4,11 @@
     box-sizing: border-box;
     font-family: kalam;
 }
-header{
-    background-color: #b2a16f;
-    height: 325px;
-    width: 100%;
-    font-family: kalam;
+.navbar{
+    background-color: #3E5151;
 }
-h1{
-    color: black;
-    font-size: 40px;
-    margin-top: 7px;
-    margin-bottom: 11px;
-}
-.logo{
-    float: left;
-    margin: 20px;
-    margin-left: 40px;
-}
-.inscripcion{
-    height: 10px;
-    width: auto;
-    text-decoration: none;
-    color: white;
-    background-color: #5c6244;
-    border: solid black;
-    padding: 5px;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-.inscripcion a{
-    position: absolute;
-}
-.inscripcion:hover{
-    text-transform: capitalize;
-    color: black;
-}
-i{
-    display: none;
-}
-.barra{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-.barra ul li{
-    list-style: none;
-    font-size: 20px;
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 20px;
-}
-.barra a{
-    text-decoration: none;
-    color: antiquewhite;
-    text-transform: capitalize;
-}
-.barra a:hover{
-    color: grey;
-    text-transform: uppercase;
+.navbar-brand img{
+    width: 150px;
 }
 .dibujo{
     height: 700px;
@@ -70,8 +16,35 @@ i{
     transform: scaleX(-1);
     float: right;
 }
+.container-fluid{
+    background-color: #5c6244;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.container-fluid h1{
+    align-items: center;
+    color: black;
+    font-size: 40px;
+}
+.inscripcion{
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: solid 2px black;
+    background-color: #3E5151;
+    color: #000;
+    padding: 5px;
+}
+.inscripcion:hover{
+    color: aliceblue;
+    background-color: #929762a2;
+}
+h2{
+    text-align: center;
+}
 main{
-    background-color: #929762;
+    background-color: #929762a2;
     margin-top: 0;
     height: auto;
     width: auto;
@@ -94,6 +67,11 @@ main img{
     margin-right: 30px;
     padding-top: 0;
 }
+main.frases{
+    background-image: url(imagenes/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
 main p{
     margin-top: 60px;
     font-size: 20px;
@@ -102,45 +80,53 @@ main p{
     padding-left: 20px;
     padding-right: 20px;
 }
+.feature{
+    height: auto;
+    border: solid 2px #000;
+    text-align: center;
+    padding: 30px;
+}
+.feature h3{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+h1{
+    text-align: center;
+}
 section{
     height: 350px;
     width: auto;
-    background-image: url(./imagenes/fondo.jpg);
+    background-image: url(./imagenes/Sunset.jpg);
     background-size: cover;
+    background-position: center;
     font-family: kalam;
     text-align: center;
+    color: #000;
 }
 section h2{
     font-size: 30px;
     color: black;
     text-decoration: underline;
     text-transform: uppercase;
-    padding-top: 20px;
-}
-section table{
-    margin: 20px;
-    border-style: none;
-    display: inline-block;
-}
-section table tr th{
-    font-variant: small-caps;
-    font-size: xx-large;
-    border-style: none;
-    padding-top: 20px;
-    padding-left: 200px;
-    text-align: center;
-}
-section table tr td{
-    font-size: medium;
-    border-style: none;
-    text-align: center;
-    padding-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 aside{
-    color: #5c6244;
+    color: black;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+aside h3{
+    font-size: 30px;
+}
+.jumbotron{
+    color: #000;
+    background-color: #3E5151;
+    margin-bottom: 0;
+    border-radius: 0;
+    font-size: 20px;
 }
 footer{
     height: auto;
@@ -150,21 +136,49 @@ footer{
     float: left;
     font-family: kalam;
     padding-left: 50px;
+    padding-right: 50px;
     padding-top: 20px;
 }
 footer h4{
+    padding-top: 20px;
     font-size: 40px;
     color: aliceblue;
     text-transform: uppercase;
     display: inline-block;
+    padding-bottom: 10px;
 }
-.formulario{
+form{
     display: block;
 }
 label{
     padding-right: 5px;
 }
-
+.row input{
+    margin-bottom: 20px;
+    background-color: #5c6244;
+    border: none;
+    border-bottom: black solid 2px;
+}
+.row input::placeholder{
+    color:aliceblue;
+    background-color: #5c6244;
+    border: none;
+}
+.row label{
+    color:aliceblue;
+}
+textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #5c6244;
+    border: none;
+    border-bottom: black solid 2px;
+}
+.row textarea::placeholder{
+    color:aliceblue;
+    background-color: #5c6244;
+    border: none;
+}
 #enviar{
     height:40px;
     width: auto;
@@ -184,6 +198,20 @@ label{
     cursor: pointer;
     text-transform: capitalize;
     color: black;
+}
+.inscripcion2{
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: solid 2px black;
+    background-color: #3E5151;
+    color: #000;
+    padding: 5px;
+    margin-left: 20px;
+}
+.inscripcion2:hover{
+    color: aliceblue;
+    background-color: #929762a2;
 }
 .redes{
     font-family: kalam;
@@ -216,12 +244,20 @@ article{
     padding-bottom: 30px;
     padding-left: 40px;
     padding-right: 40px;
+    text-align: center;
+}
+article h2{
+    font-weight: bold;
+    font-size: 50px;
 }
 article h4{
     padding-top: 25px;
     font-size: 23px;
 }
 article ul li{
+    font-size: 20px;
+}
+article p{
     font-size: 20px;
 }
 article footer{
@@ -232,13 +268,6 @@ article footer{
     float: left;
     font-family: kalam;
     padding-top: 20px;
-}
-aside{
-    background-color: rgba(159, 159, 167, 0.308);
-    padding: 30px;
-}
-aside h3{
-    font-size: 30px;
 }
 .galeria{
     min-height: 600px;
@@ -327,14 +356,6 @@ aside h3{
     h1{
         font-size: 25px;
     }
-    i{
-        float: right;
-        padding: 20px;
-        font-size: 20px;
-    }
-    .barra{
-        display: none;
-    }
     h2{
      padding: 20px;   
     }
@@ -353,14 +374,6 @@ aside h3{
     section{
         margin-top: 0;
     }
-    section table tr th{
-        padding-left: 20px;
-        font-size: 20px;
-    }
-    section table tr td{
-        padding-left: 20px;
-        font-size: 15px;
-    }
     section aside{
         margin-bottom: auto;
     }
@@ -372,14 +385,6 @@ aside h3{
 @media only screen and (min-width:600px) and (max-width:1199px){
     h1{
         font-size: 30px;
-    }
-    i{
-        float: right;
-        padding: 20px;
-        font-size: 20px;
-    }
-    .barra{
-        display: none;
     }
     h2{
      padding: 20px;   
@@ -395,14 +400,6 @@ aside h3{
     }
     section{
         margin-top: 0;
-    }
-    section table tr th{
-        padding-left: 20px;
-        font-size: 20px;
-    }
-    section table tr td{
-        padding-left: 20px;
-        font-size: 15px;
     }
     section aside{
         margin-bottom: auto;
@@ -445,9 +442,6 @@ aside h3{
 }
 /* desktop */
 @media only screen and (min-width:1200px){
-    #barrita{
-        display: none;
-    } 
     .galeria{
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(7, 1fr);
