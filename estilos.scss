@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Oswald:wght@300&family=Poppins:wght@100&family=Raleway:wght@200&display=swap');
+$font1: 'Comfortaa', cursive;
+$font2: 'Oswald', sans-serif;
+$font3: 'Poppins', sans-serif;
+$font4: 'Raleway', sans-serif;
+
+$color1:#b1b373d3;
+$color2:#928e57;
+$color3:#929762a2;
+$color4:rgb(241, 241, 221);
+$color5:#3E5151;
+$color6:#5c6244;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: $color1;
+    font-family: $font3;
+
+    .navbar-brand img {
+        width: 150px;
+    }
+}
+
+.dibujo {
+    height: 700px;
+    width: 400px;
+    transform: scaleX(-1);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container-fluid {
+    background-color: $color2;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: #000 solid;
+
+    h1 {
+        font-family: $font1;
+        align-items: center;
+        color: black;
+        font-size: 40px;
+    }
+
+    .inscripcion {
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 2px;
+        border: solid 2px black;
+        background-color: $color1;
+        color: #000;
+        padding: 5px;
+        align-items: left;
+    }
+
+    .inscripcion:hover {
+        color: aliceblue;
+        background-color: $color3;
+    }
+}
+
+main {
+    background-color: $color3;
+    margin-top: 0;
+    height: auto;
+    width: auto;
+    font-family: $font1;
+    padding-bottom: 30px;
+
+    h2 {
+        text-align: center;
+        padding-top: 20px;
+        font-family: $font1;
+    }
+
+    .nleft {
+        float: left;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+        border: $color5 solid;
+    }
+
+    .nright {
+
+        h2 {
+            text-align: left;
+            padding-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-family: $font1;
+        }
+
+        p {
+            padding-right: 360px;
+        }
+    }
+
+    .frases {
+        background-image: url(imagenes/fondo.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .feature {
+        height: auto;
+        border: solid 2px #000;
+        text-align: center;
+        padding: 30px;
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+}
+
+section {
+    height: auto;
+    width: 100%;
+    background-image: url(./imagenes/Sunset.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: $font1;
+    text-align: center;
+    color: $color4;
+    font-weight: bold;
+
+    h2 {
+        font-size: 30px;
+        color: $color4;
+        text-decoration: underline;
+        text-transform: uppercase;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+aside {
+    font-family: $font3;
+    color: $color4;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+.jumbotron {
+    color: #000;
+    background-color: $color1;
+    margin-bottom: 0;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+article {
+    background: $color5;
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151);
+    height: auto;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+
+    h2 {
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    h4 {
+        padding-top: 25px;
+        font-size: 23px;
+    }
+
+    ul li {
+        font-size: 20px;
+        list-style: none;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    footer {
+        height: auto;
+        width: 100%;
+        background-color: $color6;
+        margin-left: 0 auto;
+        float: left;
+        font-family: $font1;
+        padding-top: 20px;
+    }
+}
+
+.galeria {
+    min-height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 200px);
+    grid-gap: 10px;
+    padding: 10px;
+
+    .item {
+        border-radius: 5px;
+        border: #000 solid 5px;
+        box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .4);
+    }
+
+    .item:hover {
+        font-size: 25px;
+        transition: all 0.7s;
+        transform: scale(1.05);
+        text-shadow: 5px 5px 5px #000;
+    }
+
+    .texto {
+        font-family: $font1;
+        opacity: 0;
+        visibility: 0;
+        transition: 0.7s;
+    }
+
+    .texto:hover {
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        color: white;
+        margin: 20px;
+    }
+
+    .item1 {
+        background-image: url(./imagenes/enea\ \ 1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item2 {
+        background-image: url(./imagenes/enea\ \ 2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item3 {
+        background-image: url(./imagenes/enea\ \ 3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item4 {
+        background-image: url(./imagenes/enea\ \ 4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item5 {
+        background-image: url(./imagenes/enea\ \ 5.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item6 {
+        background-image: url(./imagenes/enea\ \ 6.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item7 {
+        background-image: url(./imagenes/enea\ \ 7.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item8 {
+        background-image: url(./imagenes/enea\ \ 8.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item9 {
+        background-image: url(./imagenes/enea\ \ 9.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    background-color: $color6;
+    margin-left: 0;
+    float: left;
+    font-family: $font3;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+
+    h4 {
+        padding-top: 20px;
+        font-size: 40px;
+        color: aliceblue;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    form {
+        display: block;
+    }
+
+    label {
+        padding-right: 5px;
+    }
+
+    .row {
+
+        input {
+            margin-bottom: 20px;
+            background-color: $color6;
+            border: none;
+            border-bottom: black solid 2px;
+        }
+
+        input::placeholder {
+            color: aliceblue;
+            background-color: $color6;
+            border: none;
+        }
+
+        label {
+            color: aliceblue;
+        }
+
+        textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: $color6;
+            border: none;
+            border-bottom: black solid 2px;
+        }
+
+        textarea::placeholder {
+            color: aliceblue;
+            background-color: $color6;
+            border: none;
+        }
+    }
+
+    #enviar {
+        height: 40px;
+        width: auto;
+        font-size: 20px;
+        font-family: $font1;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        background-color: $color6;
+        border: solid black;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 200px;
+    }
+
+    #enviar:hover {
+        cursor: pointer;
+        text-transform: capitalize;
+        color: black;
+    }
+
+    .inscripcion2 {
+        font-family: $font1;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 2px;
+        border: solid 2px black;
+        background-color: $color3;
+        color: #000;
+        padding: 5px;
+        margin-left: 20px;
+    }
+
+    .inscripcion2:hover {
+        color: $color4;
+        background-color: $color3;
+    }
+
+    .redes {
+        font-family: $font1;
+        font-size: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: capitalize;
+        float: right;
+    }
+
+    .fa-whatsapp:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .fa-instagram:hover {
+    color: black;
+    cursor: pointer;
+    }
+}
+
+/* mobile */
+@media only screen and (min-width:320px) and (max-width:599px) {
+    .container-fluid {
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    h2 {
+        padding: 20px;
+    }
+
+    main {
+        background-image: url(imagenes/eneagrama.png);
+        padding: 20px;
+
+        .nleft img {
+            height: auto;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .nright p {
+            padding: 0;
+        }
+    }
+
+    .dibujo {
+        display: none;
+    }
+
+    section {
+        margin-top: 0;
+        color: #000;
+
+        aside {
+            margin-bottom: auto;
+            color: #000;
+        }
+    }
+
+    article {
+        img {
+            width: 70%;
+            height: 70%;
+        }
+    }
+
+    .galeria {
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* tablet y ipad */
+@media only screen and (min-width:600px) and (max-width:1199px) {
+    .container-fluid {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    h2 {
+        padding: 20px;
+    }
+
+    main {
+        background-image: url(imagenes/eneagrama.png);
+        background-position: right;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .dibujo {
+        display: none;
+    }
+
+    .nright p {
+        padding: 0;
+    }
+
+    section {
+        margin-top: 0;
+
+        aside {
+            margin-bottom: auto;
+            color: #000;
+        }
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "img1 img2 img3"
+            "img4 img5 img6"
+            "img7 img8 img9";
+
+        .item {
+            min-width: 150px;
+        }
+
+        .item1 {
+            grid-area: img1;
+        }
+
+        .item2 {
+            grid-area: img2;
+        }
+
+        .item3 {
+            grid-area: img3;
+        }
+
+        .item4 {
+            grid-area: img4;
+        }
+
+        .item5 {
+            grid-area: img5;
+        }
+
+        .item6 {
+            grid-area: img6;
+        }
+
+        .item7 {
+            grid-area: img7;
+        }
+
+        .item8 {
+            grid-area: img8;
+        }
+
+        .item9 {
+            grid-area: img9;
+        }
+    }
+}
+
+/* desktop */
+@media only screen and (min-width:1200px) {
+    .galeria {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas:
+            "img1 img1 img1 img2 img3 img3"
+            "img1 img1 img1 img2 img3 img3"
+            "img4 img4 img5 img5 img6 img6"
+            "img4 img4 img5 img5 img6 img6"
+            "img4 img4 img8 img8 img8 img9"
+            "img7 img7 img8 img8 img8 img9"
+            "img7 img7 img8 img8 img8 img9";
+
+        .item1 {
+            grid-area: img1;
+        }
+
+        .item2 {
+            grid-area: img2;
+        }
+
+        .item3 {
+            grid-area: img3;
+        }
+
+        .item4 {
+            grid-area: img4;
+        }
+
+        .item5 {
+            grid-area: img5;
+        }
+
+        .item6 {
+            grid-area: img6;
+        }
+
+        .item7 {
+            grid-area: img7;
+        }
+
+        .item8 {
+            grid-area: img8;
+        }
+
+        .item9 {
+            grid-area: img9;
+        }
+    }
+}
