@@ -1,602 +1,535 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Oswald:wght@300&family=Poppins:wght@100&family=Raleway:wght@200&display=swap");
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
-    background-color: rgba(177, 179, 115, 0.8274509804);
-    font-family: "Poppins", sans-serif;
+  background-color: rgba(177, 179, 115, 0.8274509804);
+  font-family: "Poppins", sans-serif;
 }
-
 .navbar .navbar-brand img {
-    width: 150px;
+  width: 150px;
 }
 
 .dibujo {
-    height: 700px;
-    width: 400px;
-    transform: scaleX(-1);
-    position: absolute;
-    right: 0;
-    top: 0;
+  height: 700px;
+  width: 400px;
+  transform: scaleX(-1);
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .container-fluid {
-    background-color: #928e57;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    text-align: center;
-    border: #000 solid;
+  background-color: #928e57;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  border: #000 solid;
 }
-
 .container-fluid h1 {
-    font-family: "Comfortaa", cursive;
-    align-items: center;
-    color: black;
-    font-size: 40px;
+  font-family: "Comfortaa", cursive;
+  align-items: center;
+  color: black;
+  font-size: 40px;
 }
-
 .container-fluid .inscripcion {
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 2px;
-    border: solid 2px black;
-    background-color: rgba(177, 179, 115, 0.8274509804);
-    color: #000;
-    padding: 5px;
-    align-items: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: solid 2px black;
+  background-color: rgba(177, 179, 115, 0.8274509804);
+  color: #000;
+  padding: 5px;
+  align-items: left;
 }
-
 .container-fluid .inscripcion:hover {
-    color: aliceblue;
-    background-color: rgba(146, 151, 98, 0.6352941176);
+  color: aliceblue;
+  background-color: rgba(146, 151, 98, 0.6352941176);
 }
 
 main {
-    background-color: rgba(146, 151, 98, 0.6352941176);
-    margin-top: 0;
-    height: auto;
-    width: auto;
-    font-family: "Comfortaa", cursive;
-    padding-bottom: 30px;
+  width: auto;
+  height: auto;
+  background-color: rgba(146, 151, 98, 0.6352941176);
+  margin-top: 0;
+  font-family: "Comfortaa", cursive;
+  padding-bottom: 30px;
 }
-
 main h2 {
-    text-align: center;
-    padding-top: 20px;
-    font-family: "Comfortaa", cursive;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Comfortaa", cursive;
 }
-
 main .nleft {
-    float: left;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
-    border: #3E5151 solid;
+  float: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  border: #3E5151 solid;
 }
-
 main .nright h2 {
-    text-align: left;
-    padding-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-family: "Comfortaa", cursive;
+  text-align: left;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "Comfortaa", cursive;
 }
-
-main .nright p {
-    padding-right: 360px;
+main .nright p, main .nright article ul li, article ul main .nright li {
+  padding-right: 360px;
 }
-
 main .frases {
-    background-image: url(imagenes/fondo.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(imagenes/fondo.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
-main p {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+main p, main article ul li, article ul main li {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
 main .feature {
-    height: auto;
-    border: solid 2px #000;
-    text-align: center;
-    padding: 30px;
+  height: auto;
+  border: solid 2px #000;
+  text-align: center;
+  padding: 30px;
 }
-
 main h3 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 section {
-    height: auto;
-    width: 100%;
-    background-image: url(./imagenes/Sunset.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: "Comfortaa", cursive;
-    text-align: center;
-    color: rgb(241, 241, 221);
-    font-weight: bold;
+  height: auto;
+  width: 100%;
+  background-image: url(./imagenes/Sunset.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+  color: rgb(241, 241, 221);
+  font-weight: bold;
 }
-
 section h2 {
-    font-size: 30px;
-    color: rgb(241, 241, 221);
-    text-decoration: underline;
-    text-transform: uppercase;
-    padding-top: 50px;
-    padding-bottom: 20px;
+  font-size: 30px;
+  color: rgb(241, 241, 221);
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 aside {
-    font-family: "Poppins", sans-serif;
-    color: rgb(241, 241, 221);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(241, 241, 221);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
 aside h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .jumbotron {
-    color: #000;
-    background-color: rgba(177, 179, 115, 0.8274509804);
-    margin-bottom: 0;
-    border-radius: 0;
-    font-size: 20px;
+  color: #000;
+  background-color: rgba(146, 151, 98, 0.6352941176);
+  margin-bottom: 0;
+  border-radius: 0;
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
 }
 
 article {
-    background: #3E5151;
-    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
-    background: linear-gradient(to right, #DECBA4, #3E5151);
-    height: auto;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: center;
+  background: #3E5151;
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+  background: linear-gradient(to right, #DECBA4, #3E5151);
+  height: auto;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
 }
-
 article h2 {
-    font-weight: bold;
-    font-size: 50px;
+  font-weight: bold;
+  font-size: 50px;
 }
-
 article h4 {
-    padding-top: 25px;
-    font-size: 23px;
+  padding-top: 25px;
+  font-size: 23px;
 }
-
+article p, article ul li {
+  font-size: 20px;
+}
 article ul li {
-    font-size: 20px;
-    list-style: none;
+  list-style: none;
 }
-
-article p {
-    font-size: 20px;
-}
-
 article footer {
-    height: auto;
-    width: 100%;
-    background-color: #5c6244;
-    margin-left: 0 auto;
-    float: left;
-    font-family: "Comfortaa", cursive;
-    padding-top: 20px;
+  height: auto;
+  width: 100%;
+  background-color: #5c6244;
+  margin-left: 0 auto;
+  float: left;
+  font-family: "Comfortaa", cursive;
+  padding-top: 20px;
 }
 
 .galeria {
-    min-height: 600px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 200px);
-    grid-gap: 10px;
-    padding: 10px;
+  min-height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(9, 200px);
+  grid-gap: 10px;
+  padding: 10px;
 }
-
 .galeria .item {
-    border-radius: 5px;
-    border: #000 solid 5px;
-    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  border: #000 solid 5px;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
 }
-
 .galeria .item:hover {
-    font-size: 25px;
-    transition: all 0.7s;
-    transform: scale(1.05);
-    text-shadow: 5px 5px 5px #000;
+  font-size: 25px;
+  transition: all 0.7s;
+  transform: scale(1.05);
+  text-shadow: 5px 5px 5px #000;
 }
-
 .galeria .texto {
-    font-family: "Comfortaa", cursive;
-    opacity: 0;
-    visibility: 0;
-    transition: 0.7s;
+  font-family: "Comfortaa", cursive;
+  opacity: 0;
+  visibility: 0;
+  transition: 0.7s;
 }
-
 .galeria .texto:hover {
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    visibility: visible;
-    color: white;
-    margin: 20px;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  color: white;
+  margin: 20px;
 }
-
 .galeria .item1 {
-    background-image: url(./imagenes/enea\ \ 1.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 1.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
 .galeria .item2 {
-    background-image: url(./imagenes/enea\ \ 2.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 2.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
 .galeria .item3 {
-    background-image: url(./imagenes/enea\ \ 3.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 3.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
 .galeria .item4 {
-    background-image: url(./imagenes/enea\ \ 4.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 4.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
 .galeria .item5 {
-    background-image: url(./imagenes/enea\ \ 5.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 5.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
 .galeria .item6 {
-    background-image: url(./imagenes/enea\ \ 6.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 6.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
 .galeria .item7 {
-    background-image: url(./imagenes/enea\ \ 7.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 7.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
 .galeria .item8 {
-    background-image: url(./imagenes/enea\ \ 8.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 8.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
 .galeria .item9 {
-    background-image: url(./imagenes/enea\ \ 9.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./imagenes/enea\ \ 9.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 footer {
-    height: auto;
-    width: 100%;
-    background-color: #5c6244;
-    margin-left: 0;
-    float: left;
-    font-family: "Poppins", sans-serif;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
+  height: auto;
+  width: 100%;
+  background-color: #5c6244;
+  margin-left: 0;
+  float: left;
+  font-family: "Poppins", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
 }
-
 footer h4 {
-    padding-top: 20px;
-    font-size: 40px;
-    color: aliceblue;
-    text-transform: uppercase;
-    display: inline-block;
-    padding-bottom: 10px;
+  padding-top: 20px;
+  font-size: 40px;
+  color: aliceblue;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 10px;
 }
-
 footer form {
-    display: block;
+  display: block;
 }
-
 footer label {
-    padding-right: 5px;
+  padding-right: 5px;
 }
-
 footer .row input {
-    margin-bottom: 20px;
-    background-color: #5c6244;
-    border: none;
-    border-bottom: black solid 2px;
+  margin-bottom: 20px;
+  background-color: #5c6244;
+  border: none;
+  border-bottom: black solid 2px;
 }
-
 footer .row input::placeholder {
-    color: aliceblue;
-    background-color: #5c6244;
-    border: none;
+  color: aliceblue;
+  background-color: #5c6244;
+  border: none;
 }
-
 footer .row label {
-    color: aliceblue;
+  color: aliceblue;
 }
-
 footer .row textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: #5c6244;
-    border: none;
-    border-bottom: black solid 2px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #5c6244;
+  border: none;
+  border-bottom: black solid 2px;
 }
-
 footer .row textarea::placeholder {
-    color: aliceblue;
-    background-color: #5c6244;
-    border: none;
+  color: aliceblue;
+  background-color: #5c6244;
+  border: none;
 }
-
 footer #enviar {
-    height: 40px;
-    width: auto;
-    font-size: 20px;
-    font-family: "Comfortaa", cursive;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    background-color: #5c6244;
-    border: solid black;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 5px;
-    margin-left: 200px;
+  height: 40px;
+  width: auto;
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #5c6244;
+  border: solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 200px;
 }
-
 footer #enviar:hover {
-    cursor: pointer;
-    text-transform: capitalize;
-    color: black;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: black;
 }
-
 footer .inscripcion2 {
-    font-family: "Comfortaa", cursive;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 2px;
-    border: solid 2px black;
-    background-color: rgba(146, 151, 98, 0.6352941176);
-    color: #000;
-    padding: 5px;
-    margin-left: 20px;
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: solid 2px black;
+  background-color: rgba(146, 151, 98, 0.6352941176);
+  color: #000;
+  padding: 5px;
+  margin-left: 20px;
 }
-
 footer .inscripcion2:hover {
-    color: rgb(241, 241, 221);
-    background-color: rgba(146, 151, 98, 0.6352941176);
+  color: rgb(241, 241, 221);
+  background-color: rgba(146, 151, 98, 0.6352941176);
 }
-
 footer .redes {
-    font-family: "Comfortaa", cursive;
-    font-size: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-decoration: none;
-    color: whitesmoke;
-    text-transform: capitalize;
-    float: right;
+  font-family: "Comfortaa", cursive;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: capitalize;
+  float: right;
 }
-
-footer .fa-whatsapp:hover {
-    color: black;
-    cursor: pointer;
-}
-
 footer .fa-instagram:hover {
-    color: black;
-    cursor: pointer;
+  color: black;
+  cursor: pointer;
+}
+footer .fa-whatsapp:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.fa-instagram {
+  background-color: purple;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.fa-whatsapp {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
 }
 
 /* mobile */
 @media only screen and (min-width: 320px) and (max-width: 599px) {
-    .container-fluid h1 {
-        font-size: 25px;
-    }
-
-    h2 {
-        padding: 20px;
-    }
-
-    main {
-        background-image: url(imagenes/eneagrama.png);
-        padding: 20px;
-    }
-
-    main .nleft img {
-        height: auto;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    main .nright p {
-        padding: 0;
-    }
-
-    .dibujo {
-        display: none;
-    }
-
-    section {
-        margin-top: 0;
-        color: #000;
-    }
-
-    section aside {
-        margin-bottom: auto;
-        color: #000;
-    }
-
-    article img {
-        width: 70%;
-        height: 70%;
-    }
-
-    .galeria {
-        width: auto;
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .container-fluid h1 {
+    font-size: 25px;
+  }
+  h2 {
+    padding: 20px;
+  }
+  main {
+    background-image: url(imagenes/eneagrama.png);
+    padding: 20px;
+  }
+  main .nleft img {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  main .nright p, main .nright article ul li, article ul main .nright li {
+    padding: 0;
+  }
+  .dibujo {
+    display: none;
+  }
+  section {
+    margin-top: 0;
+    color: #000;
+  }
+  section aside {
+    margin-bottom: auto;
+    color: #000;
+  }
+  article img {
+    width: 70%;
+    height: 70%;
+  }
+  .galeria {
+    width: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
 /* tablet y ipad */
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-    .container-fluid h1 {
-        font-size: 30px;
-    }
-
-    h2 {
-        padding: 20px;
-    }
-
-    main {
-        background-image: url(imagenes/eneagrama.png);
-        background-position: right;
-        background-size: cover;
-        padding: 20px;
-    }
-
-    .dibujo {
-        display: none;
-    }
-
-    .nright p {
-        padding: 0;
-    }
-
-    section {
-        margin-top: 0;
-    }
-
-    section aside {
-        margin-bottom: auto;
-        color: #000;
-    }
-
-    .galeria {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "img1 img2 img3""img4 img5 img6""img7 img8 img9";
-    }
-
-    .galeria .item {
-        min-width: 150px;
-    }
-
-    .galeria .item1 {
-        grid-area: img1;
-    }
-
-    .galeria .item2 {
-        grid-area: img2;
-    }
-
-    .galeria .item3 {
-        grid-area: img3;
-    }
-
-    .galeria .item4 {
-        grid-area: img4;
-    }
-
-    .galeria .item5 {
-        grid-area: img5;
-    }
-
-    .galeria .item6 {
-        grid-area: img6;
-    }
-
-    .galeria .item7 {
-        grid-area: img7;
-    }
-
-    .galeria .item8 {
-        grid-area: img8;
-    }
-
-    .galeria .item9 {
-        grid-area: img9;
-    }
+  .container-fluid h1 {
+    font-size: 30px;
+  }
+  h2 {
+    padding: 20px;
+  }
+  main {
+    background-image: url(imagenes/eneagrama.png);
+    background-position: right;
+    background-size: cover;
+    padding: 20px;
+  }
+  .dibujo {
+    display: none;
+  }
+  .nright p, .nright article ul li, article ul .nright li {
+    padding: 0;
+  }
+  section {
+    margin-top: 0;
+  }
+  section aside {
+    margin-bottom: auto;
+    color: #000;
+  }
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+  }
+  .galeria .item {
+    min-width: 150px;
+  }
+  .galeria .item1 {
+    grid-area: img1;
+  }
+  .galeria .item2 {
+    grid-area: img2;
+  }
+  .galeria .item3 {
+    grid-area: img3;
+  }
+  .galeria .item4 {
+    grid-area: img4;
+  }
+  .galeria .item5 {
+    grid-area: img5;
+  }
+  .galeria .item6 {
+    grid-area: img6;
+  }
+  .galeria .item7 {
+    grid-area: img7;
+  }
+  .galeria .item8 {
+    grid-area: img8;
+  }
+  .galeria .item9 {
+    grid-area: img9;
+  }
 }
-
 /* desktop */
 @media only screen and (min-width: 1200px) {
-    .galeria {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        grid-template-areas: "img1 img1 img1 img2 img3 img3""img1 img1 img1 img2 img3 img3""img4 img4 img5 img5 img6 img6""img4 img4 img5 img5 img6 img6""img4 img4 img8 img8 img8 img9""img7 img7 img8 img8 img8 img9""img7 img7 img8 img8 img8 img9";
-    }
-
-    .galeria .item1 {
-        grid-area: img1;
-    }
-
-    .galeria .item2 {
-        grid-area: img2;
-    }
-
-    .galeria .item3 {
-        grid-area: img3;
-    }
-
-    .galeria .item4 {
-        grid-area: img4;
-    }
-
-    .galeria .item5 {
-        grid-area: img5;
-    }
-
-    .galeria .item6 {
-        grid-area: img6;
-    }
-
-    .galeria .item7 {
-        grid-area: img7;
-    }
-
-    .galeria .item8 {
-        grid-area: img8;
-    }
-
-    .galeria .item9 {
-        grid-area: img9;
-    }
+  .galeria {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "img1 img1 img1 img2 img3 img3" "img1 img1 img1 img2 img3 img3" "img4 img4 img5 img5 img6 img6" "img4 img4 img5 img5 img6 img6" "img4 img4 img8 img8 img8 img9" "img7 img7 img8 img8 img8 img9" "img7 img7 img8 img8 img8 img9";
+  }
+  .galeria .item1 {
+    grid-area: img1;
+  }
+  .galeria .item2 {
+    grid-area: img2;
+  }
+  .galeria .item3 {
+    grid-area: img3;
+  }
+  .galeria .item4 {
+    grid-area: img4;
+  }
+  .galeria .item5 {
+    grid-area: img5;
+  }
+  .galeria .item6 {
+    grid-area: img6;
+  }
+  .galeria .item7 {
+    grid-area: img7;
+  }
+  .galeria .item8 {
+    grid-area: img8;
+  }
+  .galeria .item9 {
+    grid-area: img9;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
