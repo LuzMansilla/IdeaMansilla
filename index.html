@@ -23,7 +23,7 @@
 <body>
     <header>
         <!-- comienza mi navbar -->
-        <nav class="navbar navbar-expand-sm navbar-dark">
+        <nav class="navbar navbar-expand-sm">
             <a class="navbar-brand" href="#">
                 <img src="imagenes/Logo Kairós.png" alt="Logo">
             </a>
@@ -59,7 +59,7 @@
     </div>
     <main>
         <div class="nleft">
-            <img src="imagenes/nosotras.png" alt="Nosotras" height="300" width="300">
+            <img src="imagenes/Nosotras.jpg" alt="Nosotras" height="250" width="370">
         </div>
         <div class="nright">
             <h2>Quienes Somos</h2>
@@ -76,7 +76,7 @@
         <div class="col-sm-4 col-md-4 col-lg-4">
             <h3>Cuando</h3>
             <i class="fa-regular fa-hand-point-down"></i>
-            <p>1 de Agosto</p>
+            <p>6 de Octubre</p>
         </div>
         <div class="col-sm-4 col-md-4 col-lg-4">
             <h3>Donde</h3>
@@ -96,7 +96,7 @@
 <footer>
     <a id="enlace"></a>
     <h4>Mas Informacion</h4>
-    <form>
+    <form action="enviar.php" method="get" enctype="application/x-www-form-urlencoded" netlify>
         <div class="row">
             <div class="col-sm-12">
                 <input type="text" class="form-control" placeholder="Nombre" required>
@@ -117,12 +117,12 @@
                 <input type="radio" name="sexo">
             </div>
             <div class="col-sm-12">
-                <textarea name="comentarios" id="" rows="5" placeholder="¿Tenes conocimientos sobre esta herramienta?"></textarea>
+                <textarea name="comentarios"rows="2" placeholder="¿Tenes conocimientos sobre esta herramienta?"></textarea>
             </div>
             <div class="col-sm-12">
-                <textarea name="comentarios" id="" rows="5" placeholder="Expectativas"></textarea>
+                <textarea name="comentarios"rows="5" placeholder="Expectativas"></textarea>
             </div>
-                <input type="button" value="Enviar" id="enviar">
+            <button id="enviar">Enviar</button>
         </div>
     </form>
     <div class="redes">
@@ -139,5 +139,4 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 </footer>
-
 </html>

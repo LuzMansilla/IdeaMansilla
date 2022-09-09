@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Oswald:wght@300&family=Poppins:wght@100&family=Raleway:wght@200&display=swap');
+@font-face {
+    font-family: "azonix";
+    src: url(fonts/azonix.zip);
+}
+
 $font1: 'Comfortaa', cursive;
-$font2: 'Oswald', sans-serif;
+$font2: "azonix";
 $font3: 'Poppins', sans-serif;
 
-$color1:#b1b373d3;
-$color2:#928e57;
-$color3:#929762a2;
-$color4:rgb(241, 241, 221);
-$color5:#3E5151;
-$color6:#5c6244;
+$color1:#c2ab82;
+$color2:#000032;
+$color3:#01004e;
+$color4:#67013a;
+$color5:#d63d41;
+$color6:#58473A;
 
 * {
     margin: 0;
@@ -25,19 +30,35 @@ $color6:#5c6244;
 .navbar {
     background-color: $color1;
     font-family: $font3;
+    font-size: 20px;
+    font-weight: bold;
 
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+
+    .navbar-nav{
+        padding-right: 150px;
+        gap: 20px;
+    }
+    .nav-link{
+        color: $color4;
+    }
+    .nav-link:hover{
+        color: $color5;
+    }
     .navbar-brand img {
         width: 150px;
     }
 }
 
 .dibujo {
-    height: 700px;
+    height: 550px;
     width: 400px;
     transform: scaleX(-1);
     position: absolute;
     right: 0;
-    top: 0;
+    padding-top: 0;
 }
 
 .container-fluid {
@@ -45,12 +66,11 @@ $color6:#5c6244;
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
-    border: #000 solid;
 
     h1 {
-        font-family: $font1;
+        font-family: $font2;
         align-items: center;
-        color: black;
+        color: $color1;
         font-size: 40px;
     }
 
@@ -59,43 +79,38 @@ $color6:#5c6244;
         text-transform: uppercase;
         border-radius: 2px;
         border: solid 2px black;
-        background-color: $color1;
-        color: #000;
+        background-color: $color4;
+        color: $color1;
         padding: 5px;
         align-items: left;
     }
 
     .inscripcion:hover {
         color: aliceblue;
-        background-color: $color3;
+        background-color: $color5;
     }
 }
 
 main {
-    @include sizes(auto, auto, $color3);
+    @include sizes(auto, auto, $color4);
     margin-top: 0;
     font-family: $font1;
     padding-bottom: 30px;
+    color: $color1;
+    display: flex;
 
-    h2 {
-        text-align: center;
-        padding-top: 20px;
-        font-family: $font1;
-    }
-
+    // seccion 1    
     .nleft {
-        float: left;
         margin-left: 30px;
         margin-right: 30px;
-        margin-top: 30px;
-        border: $color5 solid;
+        margin-top: 70px;
     }
-
     .nright {
 
         h2 {
             text-align: left;
-            padding-top: 20px;
+            padding-top: 40px;
+            padding-left: 90px;
             font-size: 30px;
             font-weight: bold;
             text-transform: uppercase;
@@ -108,19 +123,47 @@ main {
         }
     }
 
-    .frases {
-        background-image: url(imagenes/fondo.jpg);
-        background-position: center;
-        background-size: cover;
+    // seccion 2
+    
+    .main-seccion2{
+        height: 400px;
+        display: flex;
+        justify-content: center;
+
+        .nleft-seccion2{
+            margin-left: 100px;
+        }
+
+        .nright-seccion2{
+            text-align: center;
+            padding-right: 100px;
+            padding-top: 50px;
+        } 
+    }
+    
+    // seccion 3
+    h2{
+        text-align: center;
+        
     }
 
-    p {
-        margin-top: 15px;
-        font-size: 20px;
-        font-weight: bold;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+    // seccion 4
+    .frases {
+        background-image: url(imagenes/evening-atmosphere-4315445_1920.jpg);
+        background-position: center;
+        background-size: cover;
+        h2{
+            color: #01004e;
+            background-color: #0000325b;
+            font-weight: bold;
+        }
+        h3{
+        color: #fff;
+        }
+        p{
+            color: #fff;
+            text-shadow: 0 0 5px $color5;
+        }
     }
 
     .feature {
@@ -135,6 +178,15 @@ main {
         font-weight: bold;
         margin-bottom: 0px;
     }
+
+    p {
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 section {
@@ -145,12 +197,12 @@ section {
     background-position: center;
     font-family: $font1;
     text-align: center;
-    color: $color4;
+    color: #fff;
     font-weight: bold;
 
     h2 {
         font-size: 30px;
-        color: $color4;
+        color: #fff;
         text-decoration: underline;
         text-transform: uppercase;
         padding-top: 50px;
@@ -160,7 +212,7 @@ section {
 
 aside {
     font-family: $font3;
-    color: $color4;
+    color: #fff;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -172,7 +224,7 @@ aside {
 
 .jumbotron {
     color: #000;
-    background-color: $color3;
+    background-color: $color5;
     margin-bottom: 0;
     border-radius: 0;
     font-size: 20px;
@@ -180,9 +232,8 @@ aside {
 }
 
 article {
-    background: $color5;
-    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
-    background: linear-gradient(to right, #DECBA4, #3E5151);
+    background: -webkit-linear-gradient(to right, $color2, $color4);
+    background: linear-gradient(to right, $color2, $color4);
     height: auto;
     width: 100%;
     padding-top: 15px;
@@ -192,17 +243,16 @@ article {
     text-align: center;
 
     h2 {
-        font-weight: bold;
-        font-size: 50px;
-    }
-
-    h4 {
-        padding-top: 25px;
-        font-size: 23px;
+        font-size: 40px;
+        text-shadow: 0 0 2px $color4;
+        color: $color1;
     }
 
     p {
+        color: rgba(255, 255, 255, 0.842);
         font-size: 20px;
+        padding-bottom: 30px;
+        font-weight: lighter;
     }
 
     ul li {
@@ -218,6 +268,31 @@ article {
         float: left;
         font-family: $font1;
         padding-top: 20px;
+    }
+    .article1-seccion3{
+        color: $color5;
+        --opacidad-negro: 0.5;
+        background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/woman-570883_1920.jpg");
+        background-size: cover;
+        h3{
+            color: #fff;
+            background-color: #58473a63;
+            text-shadow: 0 0 3px $color2;
+            padding-top: 25px;
+        }
+        p{
+            text-align: left;
+            color: rgba(255, 255, 255, 0.842);
+            font-size: 20px;
+            padding-bottom: 30px;
+            font-weight: lighter;
+            text-shadow: 0 0 5px $color2;
+        }
+    }
+    .article2-seccion3{
+        @extend .article1-seccion3;
+        background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/woman-591576_1920.jpg");
+
     }
 }
 
@@ -347,11 +422,19 @@ footer {
     }
 
     .row {
-
+        .form-control:focus{
+            background-color: $color6;
+            border: none;
+            color: $color5;
+            font-weight: bold;
+            border-bottom: black solid 2px;
+        }
         input {
             margin-bottom: 20px;
             background-color: $color6;
             border: none;
+            color: $color5;
+            font-weight: bold;
             border-bottom: black solid 2px;
         }
 
@@ -359,6 +442,7 @@ footer {
             color: aliceblue;
             background-color: $color6;
             border: none;
+            padding: 0;
         }
 
         label {
@@ -370,6 +454,7 @@ footer {
             margin-bottom: 20px;
             background-color: $color6;
             border: none;
+            color: $color5;
             border-bottom: black solid 2px;
         }
 
@@ -409,13 +494,13 @@ footer {
         border-radius: 2px;
         border: solid 2px black;
         background-color: $color3;
-        color: #000;
+        color: #fff;
         padding: 5px;
         margin-left: 20px;
     }
 
     .inscripcion2:hover {
-        color: $color4;
+        color: $color5;
         background-color: $color3;
     }
     .redes{
@@ -537,7 +622,7 @@ $mapa:(
     }
 
     .nright p {
-        padding: 0;
+        padding-right: 10px;
     }
 
     section {
