@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Oswald:wght@300&family=Poppins:wght@100&family=Raleway:wght@200&display=swap');
+
 @font-face {
-    font-family: "azonix";
-    src: url(fonts/azonix.zip);
+    font-family: 'Azonix';
+    src: url('./Fonts/Azonix.otf');
 }
 
-$font1: 'Comfortaa', cursive;
-$font2: "azonix";
-$font3: 'Poppins', sans-serif;
+$font1: 'Comfortaa',cursive;
+$font2: 'Azonix';
+$font3: 'Poppins',sans-serif;
 
 $color1:#c2ab82;
 $color2:#000032;
 $color3:#01004e;
 $color4:#67013a;
-$color5:#d63d41;
+$color5:#d63d42c4;
 $color6:#58473A;
+
+$fsize1: 20px;
+$fsize2: 30px;
+$fsize3: 40px;
 
 * {
     margin: 0;
@@ -21,7 +26,7 @@ $color6:#58473A;
     box-sizing: border-box;
 }
 
-@mixin sizes($width,$height,$bcolor){
+@mixin sizes($width, $height, $bcolor) {
     width: $width;
     height: $height;
     background-color: $bcolor;
@@ -30,23 +35,26 @@ $color6:#58473A;
 .navbar {
     background-color: $color1;
     font-family: $font3;
-    font-size: 20px;
+    font-size: $fsize1;
     font-weight: bold;
 
-    .navbar-collapse{
+    .navbar-collapse {
         justify-content: flex-end;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         padding-right: 150px;
         gap: 20px;
     }
-    .nav-link{
+
+    .nav-link {
         color: $color4;
     }
-    .nav-link:hover{
+
+    .nav-link:hover {
         color: $color5;
     }
+
     .navbar-brand img {
         width: 150px;
     }
@@ -63,15 +71,16 @@ $color6:#58473A;
 
 .container-fluid {
     background-color: $color2;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 
     h1 {
         font-family: $font2;
+        font-weight: lighter;
         align-items: center;
         color: $color1;
-        font-size: 40px;
+        font-size: $fsize3;
     }
 
     .inscripcion {
@@ -105,13 +114,14 @@ main {
         margin-right: 30px;
         margin-top: 70px;
     }
+
     .nright {
 
         h2 {
             text-align: left;
             padding-top: 40px;
             padding-left: 90px;
-            font-size: 30px;
+            font-size: $fsize2;
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: underline;
@@ -124,27 +134,30 @@ main {
     }
 
     // seccion 2
-    
-    .main-seccion2{
+    .main-seccion2 {
         height: 400px;
         display: flex;
         justify-content: center;
 
-        .nleft-seccion2{
+        .nleft-seccion2 {
             margin-left: 100px;
         }
 
-        .nright-seccion2{
+        .nright-seccion2 {
             text-align: center;
             padding-right: 100px;
             padding-top: 50px;
-        } 
+
+            h2 {
+                color: $color2;
+                font-weight: bold;
+            }
+        }
     }
-    
+
     // seccion 3
-    h2{
+    h2 {
         text-align: center;
-        
     }
 
     // seccion 4
@@ -152,15 +165,18 @@ main {
         background-image: url(imagenes/evening-atmosphere-4315445_1920.jpg);
         background-position: center;
         background-size: cover;
-        h2{
+
+        h2 {
             color: #01004e;
             background-color: #0000325b;
             font-weight: bold;
         }
-        h3{
-        color: #fff;
+
+        h3 {
+            color: #fff;
         }
-        p{
+
+        p {
             color: #fff;
             text-shadow: 0 0 5px $color5;
         }
@@ -181,7 +197,7 @@ main {
 
     p {
         margin-top: 15px;
-        font-size: 20px;
+        font-size: $fsize1;
         font-weight: bold;
         padding-top: 20px;
         padding-left: 20px;
@@ -195,92 +211,45 @@ section {
     background-image: url(./imagenes/Sunset.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     font-family: $font1;
     text-align: center;
     color: #fff;
     font-weight: bold;
 
     h2 {
-        font-size: 30px;
+        font-size: $fsize2;
         color: #fff;
-        text-decoration: underline;
-        text-transform: uppercase;
+        font-family: $font2;
+        text-transform: capitalize;
         padding-top: 50px;
         padding-bottom: 20px;
     }
-}
 
-aside {
-    font-family: $font3;
-    color: #fff;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    h3 {
-        font-size: 30px;
-    }
-}
-
-.jumbotron {
-    color: #000;
-    background-color: $color5;
-    margin-bottom: 0;
-    border-radius: 0;
-    font-size: 20px;
-    font-family: $font1;
-}
-
-article {
-    background: -webkit-linear-gradient(to right, $color2, $color4);
-    background: linear-gradient(to right, $color2, $color4);
-    height: auto;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: center;
-
-    h2 {
-        font-size: 40px;
-        text-shadow: 0 0 2px $color4;
-        color: $color1;
-    }
-
-    p {
-        color: rgba(255, 255, 255, 0.842);
-        font-size: 20px;
-        padding-bottom: 30px;
-        font-weight: lighter;
-    }
-
-    ul li {
-        @extend p ;
-        list-style: none;
-    }
-
-    footer {
-        height: auto;
-        width: 100%;
-        background-color: $color6;
-        margin-left: 0 auto;
-        float: left;
-        font-family: $font1;
+    aside {
+        font-family: $font3;
+        color: #fff;
+        text-align: center;
         padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: $fsize2;
     }
-    .article1-seccion3{
+
+    // seccion 3
+    .article1-seccion3 {
         color: $color5;
         --opacidad-negro: 0.5;
         background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/woman-570883_1920.jpg");
         background-size: cover;
-        h3{
+
+        h3 {
             color: #fff;
             background-color: #58473a63;
             text-shadow: 0 0 3px $color2;
             padding-top: 25px;
         }
-        p{
+
+        p {
             text-align: left;
             color: rgba(255, 255, 255, 0.842);
             font-size: 20px;
@@ -289,10 +258,70 @@ article {
             text-shadow: 0 0 5px $color2;
         }
     }
-    .article2-seccion3{
+
+    .article2-seccion3 {
         @extend .article1-seccion3;
         background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/woman-591576_1920.jpg");
+    }
+}
 
+.jumbotron {
+    color: #000;
+    background-color: $color5;
+    margin-bottom: 0;
+    border-radius: 0;
+    font-size: $fsize1;
+    font-family: $font1;
+}
+
+// seccion 2
+article {
+    background: -webkit-linear-gradient(to right, $color2, $color4);
+    background: linear-gradient(to right, $color2, $color4);
+    height: auto;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+
+    h2 {
+        font-size: $fsize3;
+        text-shadow: 0 0 2px $color4;
+        color: $color1;
+    }
+
+    // seccion 3
+    ul li {
+        color: rgba(255, 255, 255, 0.842);
+        font-size: $fsize1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: lighter;
+        list-style: none;
+    }
+
+    // seccion 5
+    
+    p {
+        color: rgba(255, 255, 255, 0.842);
+        font-size: $fsize1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: lighter;
+        list-style: none;
+    }
+
+    footer {
+        height: auto;
+        width: 100%;
+        background-color: $color6;
+        margin-left: 0;
+        margin-bottom: 20px;
+        float: left;
+        font-family: $font1;
+        padding-top: 20px;
     }
 }
 
@@ -317,7 +346,7 @@ article {
     }
 
     .item:hover {
-        font-size: 25px;
+        font-size: $fsize1;
         transition: all 0.7s;
         transform: scale(1.05);
         text-shadow: 5px 5px 5px #000;
@@ -393,6 +422,7 @@ article {
         background-size: cover;
     }
 }
+
 footer {
     height: auto;
     width: 100%;
@@ -403,10 +433,11 @@ footer {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
+    padding-bottom: 30px;
 
     h4 {
         padding-top: 20px;
-        font-size: 40px;
+        font-size: $fsize3;
         color: aliceblue;
         text-transform: uppercase;
         display: inline-block;
@@ -422,18 +453,21 @@ footer {
     }
 
     .row {
-        .form-control:focus{
+        .form-control:focus {
             background-color: $color6;
             border: none;
-            color: $color5;
+            color: rgb(238, 131, 82);
             font-weight: bold;
             border-bottom: black solid 2px;
+            outline: none;
+            box-shadow: none;
         }
+
         input {
             margin-bottom: 20px;
             background-color: $color6;
             border: none;
-            color: $color5;
+            color: rgb(238, 131, 82);
             font-weight: bold;
             border-bottom: black solid 2px;
         }
@@ -449,12 +483,17 @@ footer {
             color: aliceblue;
         }
 
+        input[type=radio], [type=checkbox]:focus{
+            color: rgb(238, 131, 82);
+        }
+
         textarea {
             width: 100%;
             margin-bottom: 20px;
             background-color: $color6;
             border: none;
-            color: $color5;
+            color: rgb(238, 131, 82);
+            font-weight: bold;
             border-bottom: black solid 2px;
         }
 
@@ -463,12 +502,16 @@ footer {
             background-color: $color6;
             border: none;
         }
+        
+        textarea:focus-visible{
+            outline: none;
+        }
     }
 
     #enviar {
         height: 40px;
         width: auto;
-        font-size: 20px;
+        font-size: $fsize1;
         font-family: $font1;
         font-weight: bold;
         text-decoration: none;
@@ -479,6 +522,7 @@ footer {
         padding: 5px;
         margin-top: 5px;
         margin-left: 200px;
+        margin-bottom: 50px;
     }
 
     #enviar:hover {
@@ -503,15 +547,15 @@ footer {
         color: $color5;
         background-color: $color3;
     }
-    .redes{
+
+    .redes {
         font-family: $font1;
-        font-size: 30px;
-        margin-left: 15px;
-        margin-right: 15px;
+        font-size: $fsize2;
+        margin-bottom: 25px;
         text-decoration: none;
         color: aliceblue;
         text-transform: capitalize;
-        float: right;
+        text-align: right;
     }
 
     .fa-instagram:hover {
@@ -525,13 +569,12 @@ footer {
     }
 }
 
-$mapa:(
-    instagram:purple,
-    whatsapp:green
-);
+$mapa:(instagram:purple,
+    whatsapp:green);
 
-@each $red,$colores in $mapa {
-    .fa-#{$red}{
+@each $red,
+$colores in $mapa {
+    .fa-#{$red} {
         background-color: $colores;
         height: 50px;
         width: 50px;
@@ -543,6 +586,9 @@ $mapa:(
 
 /* mobile */
 @media only screen and (min-width:320px) and (max-width:599px) {
+    .navbar{
+        font-size: 16px;
+    }
     .container-fluid {
         h1 {
             font-size: 25px;
@@ -554,33 +600,73 @@ $mapa:(
     }
 
     main {
-        background-image: url(imagenes/eneagrama.png);
+        --opacidad-negro: 0.5;
+        background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/eneagrama.png");
+        background-position: right;
+        background-size: cover;
         padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        text-shadow: 0 0 5px #000;
 
-        .nleft img {
+        .nleft {
+            margin-top: 0;
+            margin-bottom: 30px;
+
+            img {
             height: auto;
             width: 100%;
-            margin: 0;
-            text-align: center;
-            margin-bottom: 15px;
+            }
         }
 
-        .nright p {
+        .nright{ 
+            text-align: left;
+
+            h2{
+            text-align: center;
             padding: 0;
+            font-size: $fsize1;
+            }
+            p{
+                padding-right: 10px;
+                font-size: 16px;
+            }
+        }
+        
+        .main-seccion2 {
+            height: auto;
+
+            .nleft-seccion2 {
+                display: none;
+            }   
+            .nright-seccion2{ 
+                text-align: left;
+                padding: 0;
+                text-shadow: 0 0 5px #000;
+
+                h2{
+                text-align: center;
+                font-size: $fsize1;
+                color: $color1;
+                margin-bottom: 0;
+                }
+
+                p{
+                    margin-top: 0;
+                    font-size: 16px;
+                }
+            }
         }
     }
-
     .dibujo {
         display: none;
     }
 
     section {
         margin-top: 0;
-        color: #000;
 
         aside {
             margin-bottom: auto;
-            color: #000;
         }
     }
 
@@ -600,6 +686,7 @@ $mapa:(
 
 /* tablet y ipad */
 @media only screen and (min-width:600px) and (max-width:1199px) {
+    
     .container-fluid {
         h1 {
             font-size: 30px;
@@ -611,18 +698,64 @@ $mapa:(
     }
 
     main {
-        background-image: url(imagenes/eneagrama.png);
+        --opacidad-negro: 0.5;
+        background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/eneagrama.png");
         background-position: right;
         background-size: cover;
         padding: 20px;
-    }
+        display: flex;
+        flex-wrap:wrap-reverse;
+        text-shadow: 0 0 5px #000;
+        
+        .nleft img {
+            height: auto;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 15px;
+        }
 
+        .nright h2{
+            text-align: center;
+            padding: 0;
+            padding-top: 20px;
+        }
+
+        .nright p{
+            width: 100%;
+            padding-right: 10px;
+            margin: 0;
+        }
+        .main-seccion2 {
+            height: auto;
+
+            .nleft-seccion2 {
+                display: none;
+            }   
+            .nright-seccion2{ 
+                text-align: left;
+                padding: 0;
+                text-shadow: 0 0 5px #000;
+
+                h2{
+                text-align: center;
+                font-size: $fsize2;
+                color: $color1;
+                margin-bottom: 0;
+                }
+
+                p{
+                    margin-top: 0;
+                    font-size: 16px;
+                }
+            }
+        }
+        .frases h2{
+            color: $color5;
+        }
+    }
     .dibujo {
         display: none;
-    }
-
-    .nright p {
-        padding-right: 10px;
     }
 
     section {
@@ -630,9 +763,9 @@ $mapa:(
 
         aside {
             margin-bottom: auto;
-            color: #000;
         }
     }
+
 
     .galeria {
         grid-template-columns: repeat(3, 1fr);
@@ -733,5 +866,10 @@ $mapa:(
         .item9 {
             grid-area: img9;
         }
+    }
+    .redes{
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
     }
 }

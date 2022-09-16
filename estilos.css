@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Oswald:wght@300&family=Poppins:wght@100&family=Raleway:wght@200&display=swap");
 @font-face {
-  font-family: "azonix";
-  src: url(fonts/azonix.zip);
+  font-family: "Azonix";
+  src: url("./Fonts/Azonix.otf");
 }
 * {
   margin: 0;
@@ -26,7 +26,7 @@
   color: #67013a;
 }
 .navbar .nav-link:hover {
-  color: #d63d41;
+  color: rgba(214, 61, 66, 0.768627451);
 }
 .navbar .navbar-brand img {
   width: 150px;
@@ -43,12 +43,13 @@
 
 .container-fluid {
   background-color: #000032;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
 .container-fluid h1 {
-  font-family: "azonix";
+  font-family: "Azonix";
+  font-weight: lighter;
   align-items: center;
   color: #c2ab82;
   font-size: 40px;
@@ -65,7 +66,7 @@
 }
 .container-fluid .inscripcion:hover {
   color: aliceblue;
-  background-color: #d63d41;
+  background-color: rgba(214, 61, 66, 0.768627451);
 }
 
 main {
@@ -93,7 +94,7 @@ main .nright h2 {
   text-decoration: underline;
   font-family: "Comfortaa", cursive;
 }
-main .nright p, main .nright article ul li, article ul main .nright li {
+main .nright p {
   padding-right: 360px;
 }
 main .main-seccion2 {
@@ -108,6 +109,10 @@ main .main-seccion2 .nright-seccion2 {
   text-align: center;
   padding-right: 100px;
   padding-top: 50px;
+}
+main .main-seccion2 .nright-seccion2 h2 {
+  color: #000032;
+  font-weight: bold;
 }
 main h2 {
   text-align: center;
@@ -125,9 +130,9 @@ main .frases h2 {
 main .frases h3 {
   color: #fff;
 }
-main .frases p, main .frases article ul li, article ul main .frases li {
+main .frases p {
   color: #fff;
-  text-shadow: 0 0 5px #d63d41;
+  text-shadow: 0 0 5px rgba(214, 61, 66, 0.768627451);
 }
 main .feature {
   height: auto;
@@ -140,7 +145,7 @@ main h3 {
   font-weight: bold;
   margin-bottom: 0px;
 }
-main p, main article ul li, article ul main li {
+main p {
   margin-top: 15px;
   font-size: 20px;
   font-weight: bold;
@@ -155,6 +160,7 @@ section {
   background-image: url(./imagenes/Sunset.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   font-family: "Comfortaa", cursive;
   text-align: center;
   color: #fff;
@@ -163,26 +169,46 @@ section {
 section h2 {
   font-size: 30px;
   color: #fff;
-  text-decoration: underline;
-  text-transform: uppercase;
+  font-family: "Azonix";
+  text-transform: capitalize;
   padding-top: 50px;
   padding-bottom: 20px;
 }
-
-aside {
+section aside {
   font-family: "Poppins", sans-serif;
   color: #fff;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-aside h3 {
   font-size: 30px;
+}
+section .article1-seccion3, section .article2-seccion3 {
+  color: rgba(214, 61, 66, 0.768627451);
+  --opacidad-negro: 0.5;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/woman-570883_1920.jpg");
+  background-size: cover;
+}
+section .article1-seccion3 h3, section .article2-seccion3 h3 {
+  color: #fff;
+  background-color: rgba(88, 71, 58, 0.3882352941);
+  text-shadow: 0 0 3px #000032;
+  padding-top: 25px;
+}
+section .article1-seccion3 p, section .article2-seccion3 p {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: lighter;
+  text-shadow: 0 0 5px #000032;
+}
+section .article2-seccion3 {
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/woman-591576_1920.jpg");
 }
 
 .jumbotron {
   color: #000;
-  background-color: #d63d41;
+  background-color: rgba(214, 61, 66, 0.768627451);
   margin-bottom: 0;
   border-radius: 0;
   font-size: 20px;
@@ -195,7 +221,7 @@ article {
   height: auto;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
@@ -205,46 +231,31 @@ article h2 {
   text-shadow: 0 0 2px #67013a;
   color: #c2ab82;
 }
-article p, article ul li {
+article ul li {
   color: rgba(255, 255, 255, 0.842);
   font-size: 20px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: lighter;
+  list-style: none;
 }
-article ul li {
+article p {
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: lighter;
   list-style: none;
 }
 article footer {
   height: auto;
   width: 100%;
   background-color: #58473A;
-  margin-left: 0 auto;
+  margin-left: 0;
+  margin-bottom: 20px;
   float: left;
   font-family: "Comfortaa", cursive;
   padding-top: 20px;
-}
-article .article1-seccion3, article .article2-seccion3 {
-  color: #d63d41;
-  --opacidad-negro: 0.5;
-  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/woman-570883_1920.jpg");
-  background-size: cover;
-}
-article .article1-seccion3 h3, article .article2-seccion3 h3 {
-  color: #fff;
-  background-color: rgba(88, 71, 58, 0.3882352941);
-  text-shadow: 0 0 3px #000032;
-  padding-top: 25px;
-}
-article .article1-seccion3 p, article .article2-seccion3 p, article .article1-seccion3 ul li, article .article2-seccion3 ul li, article ul .article1-seccion3 li, article ul .article2-seccion3 li {
-  text-align: left;
-  color: rgba(255, 255, 255, 0.842);
-  font-size: 20px;
-  padding-bottom: 30px;
-  font-weight: lighter;
-  text-shadow: 0 0 5px #000032;
-}
-article .article2-seccion3 {
-  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/woman-591576_1920.jpg");
 }
 
 .galeria {
@@ -267,7 +278,7 @@ article .article2-seccion3 {
   background: rgba(0, 0, 0, 0.4);
 }
 .galeria .item:hover {
-  font-size: 25px;
+  font-size: 20px;
   transition: all 0.7s;
   transform: scale(1.05);
   text-shadow: 5px 5px 5px #000;
@@ -342,6 +353,7 @@ footer {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
+  padding-bottom: 30px;
 }
 footer h4 {
   padding-top: 20px;
@@ -360,15 +372,17 @@ footer label {
 footer .row .form-control:focus {
   background-color: #58473A;
   border: none;
-  color: #d63d41;
+  color: rgb(238, 131, 82);
   font-weight: bold;
   border-bottom: black solid 2px;
+  outline: none;
+  box-shadow: none;
 }
 footer .row input {
   margin-bottom: 20px;
   background-color: #58473A;
   border: none;
-  color: #d63d41;
+  color: rgb(238, 131, 82);
   font-weight: bold;
   border-bottom: black solid 2px;
 }
@@ -381,18 +395,25 @@ footer .row input::placeholder {
 footer .row label {
   color: aliceblue;
 }
+footer .row input[type=radio], footer .row [type=checkbox]:focus {
+  color: rgb(238, 131, 82);
+}
 footer .row textarea {
   width: 100%;
   margin-bottom: 20px;
   background-color: #58473A;
   border: none;
-  color: #d63d41;
+  color: rgb(238, 131, 82);
+  font-weight: bold;
   border-bottom: black solid 2px;
 }
 footer .row textarea::placeholder {
   color: aliceblue;
   background-color: #58473A;
   border: none;
+}
+footer .row textarea:focus-visible {
+  outline: none;
 }
 footer #enviar {
   height: 40px;
@@ -408,6 +429,7 @@ footer #enviar {
   padding: 5px;
   margin-top: 5px;
   margin-left: 200px;
+  margin-bottom: 50px;
 }
 footer #enviar:hover {
   cursor: pointer;
@@ -426,18 +448,17 @@ footer .inscripcion2 {
   margin-left: 20px;
 }
 footer .inscripcion2:hover {
-  color: #d63d41;
+  color: rgba(214, 61, 66, 0.768627451);
   background-color: #01004e;
 }
 footer .redes {
   font-family: "Comfortaa", cursive;
   font-size: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-bottom: 25px;
   text-decoration: none;
   color: aliceblue;
   text-transform: capitalize;
-  float: right;
+  text-align: right;
 }
 footer .fa-instagram:hover {
   color: black;
@@ -468,6 +489,9 @@ footer .fa-whatsapp:hover {
 
 /* mobile */
 @media only screen and (min-width: 320px) and (max-width: 599px) {
+  .navbar {
+    font-size: 16px;
+  }
   .container-fluid h1 {
     font-size: 25px;
   }
@@ -475,29 +499,64 @@ footer .fa-whatsapp:hover {
     padding: 20px;
   }
   main {
-    background-image: url(imagenes/eneagrama.png);
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/eneagrama.png");
+    background-position: right;
+    background-size: cover;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: 0 0 5px #000;
+  }
+  main .nleft {
+    margin-top: 0;
+    margin-bottom: 30px;
   }
   main .nleft img {
     height: auto;
     width: 100%;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 15px;
   }
-  main .nright p, main .nright article ul li, article ul main .nright li {
+  main .nright {
+    text-align: left;
+  }
+  main .nright h2 {
+    text-align: center;
     padding: 0;
+    font-size: 20px;
+  }
+  main .nright p {
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  main .main-seccion2 {
+    height: auto;
+  }
+  main .main-seccion2 .nleft-seccion2 {
+    display: none;
+  }
+  main .main-seccion2 .nright-seccion2 {
+    text-align: left;
+    padding: 0;
+    text-shadow: 0 0 5px #000;
+  }
+  main .main-seccion2 .nright-seccion2 h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #c2ab82;
+    margin-bottom: 0;
+  }
+  main .main-seccion2 .nright-seccion2 p {
+    margin-top: 0;
+    font-size: 16px;
   }
   .dibujo {
     display: none;
   }
   section {
     margin-top: 0;
-    color: #000;
   }
   section aside {
     margin-bottom: auto;
-    color: #000;
   }
   article img {
     width: 70%;
@@ -517,23 +576,64 @@ footer .fa-whatsapp:hover {
     padding: 20px;
   }
   main {
-    background-image: url(imagenes/eneagrama.png);
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("imagenes/eneagrama.png");
     background-position: right;
     background-size: cover;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    text-shadow: 0 0 5px #000;
+  }
+  main .nleft img {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  main .nright h2 {
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+  }
+  main .nright p {
+    width: 100%;
+    padding-right: 10px;
+    margin: 0;
+  }
+  main .main-seccion2 {
+    height: auto;
+  }
+  main .main-seccion2 .nleft-seccion2 {
+    display: none;
+  }
+  main .main-seccion2 .nright-seccion2 {
+    text-align: left;
+    padding: 0;
+    text-shadow: 0 0 5px #000;
+  }
+  main .main-seccion2 .nright-seccion2 h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #c2ab82;
+    margin-bottom: 0;
+  }
+  main .main-seccion2 .nright-seccion2 p {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  main .frases h2 {
+    color: rgba(214, 61, 66, 0.768627451);
   }
   .dibujo {
     display: none;
-  }
-  .nright p, .nright article ul li, article ul .nright li {
-    padding-right: 10px;
   }
   section {
     margin-top: 0;
   }
   section aside {
     margin-bottom: auto;
-    color: #000;
   }
   .galeria {
     grid-template-columns: repeat(3, 1fr);
@@ -604,6 +704,11 @@ footer .fa-whatsapp:hover {
   }
   .galeria .item9 {
     grid-area: img9;
+  }
+  .redes {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
   }
 }
 
