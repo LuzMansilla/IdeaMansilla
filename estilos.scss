@@ -5,9 +5,11 @@
     src: url('./Fonts/Azonix.otf');
 }
 
-$font1: 'Comfortaa',cursive;
+$font1: 'Comfortaa',
+cursive;
 $font2: 'Azonix';
-$font3: 'Poppins',sans-serif;
+$font3: 'Poppins',
+sans-serif;
 
 $color1:#c2ab82;
 $color2:#000032;
@@ -233,6 +235,19 @@ section {
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: $fsize2;
+
+        .finalizarCompra {
+            background-color: rgb(238, 131, 82);
+            color: whitesmoke;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .columna-tabla {
+            color: whitesmoke;
+        }
     }
 
     // seccion 3
@@ -303,7 +318,7 @@ article {
     }
 
     // seccion 5
-    
+
     p {
         color: rgba(255, 255, 255, 0.842);
         font-size: $fsize1;
@@ -456,7 +471,7 @@ footer {
         .form-control:focus {
             background-color: $color6;
             border: none;
-            color: rgb(238, 131, 82);
+            color: aliceblue;
             font-weight: bold;
             border-bottom: black solid 2px;
             outline: none;
@@ -467,48 +482,82 @@ footer {
             margin-bottom: 20px;
             background-color: $color6;
             border: none;
-            color: rgb(238, 131, 82);
+            color: aliceblue;
             font-weight: bold;
             border-bottom: black solid 2px;
         }
 
         input::placeholder {
-            color: aliceblue;
+            color: rgb(238, 131, 82);
             background-color: $color6;
             border: none;
             padding: 0;
         }
 
+        i {
+            float: right;
+        }
+
+        .formulario__grupo-correcto {
+            color: greenyellow;
+            opacity: 1;
+        }
+
+        .formulario__grupo-incorrecto {
+            color: red;
+        }
+
+        .formulario__input-error {
+            font-size: 12px;
+            margin-bottom: 0;
+            display: none;
+        }
+
+        .formulario__input-error-activo {
+            display: block;
+        }
+
         label {
-            color: aliceblue;
-        }
-
-        input[type=radio], [type=checkbox]:focus{
             color: rgb(238, 131, 82);
         }
 
-        textarea {
-            width: 100%;
-            margin-bottom: 20px;
-            background-color: $color6;
-            border: none;
+        input[type=radio],
+        [type=checkbox]:focus {
             color: rgb(238, 131, 82);
-            font-weight: bold;
-            border-bottom: black solid 2px;
         }
 
-        textarea::placeholder {
-            color: aliceblue;
-            background-color: $color6;
-            border: none;
+        h5 {
+            color: white;
+            padding: 20px;
+            font-size: 15px;
         }
-        
-        textarea:focus-visible{
-            outline: none;
+
+        .formulario__mensaje {
+            height: 45px;
+            line-height: 45px;
+            background: #F66060;
+            padding: 0 15px;
+            border-radius: 3px;
+            display: none;
         }
+
+        .formulario__mensaje-activo {
+            display: block;
+        }
+
+        .formCorrecto {
+            font-size: 14px;
+            color: greenyellow;
+            display: none;
+        }
+
+        .formCorrecto-activo {
+            display: block;
+        }
+
     }
 
-    #enviar {
+    #submit {
         height: 40px;
         width: auto;
         font-size: $fsize1;
@@ -525,7 +574,7 @@ footer {
         margin-bottom: 50px;
     }
 
-    #enviar:hover {
+    #submit:hover {
         cursor: pointer;
         text-transform: capitalize;
         color: black;
@@ -586,9 +635,10 @@ $colores in $mapa {
 
 /* mobile */
 @media only screen and (min-width:320px) and (max-width:599px) {
-    .navbar{
+    .navbar {
         font-size: 16px;
     }
+
     .container-fluid {
         h1 {
             font-size: 25px;
@@ -614,50 +664,53 @@ $colores in $mapa {
             margin-bottom: 30px;
 
             img {
-            height: auto;
-            width: 100%;
+                height: auto;
+                width: 100%;
             }
         }
 
-        .nright{ 
+        .nright {
             text-align: left;
 
-            h2{
-            text-align: center;
-            padding: 0;
-            font-size: $fsize1;
+            h2 {
+                text-align: center;
+                padding: 0;
+                font-size: $fsize1;
             }
-            p{
+
+            p {
                 padding-right: 10px;
                 font-size: 16px;
             }
         }
-        
+
         .main-seccion2 {
             height: auto;
 
             .nleft-seccion2 {
                 display: none;
-            }   
-            .nright-seccion2{ 
+            }
+
+            .nright-seccion2 {
                 text-align: left;
                 padding: 0;
                 text-shadow: 0 0 5px #000;
 
-                h2{
-                text-align: center;
-                font-size: $fsize1;
-                color: $color1;
-                margin-bottom: 0;
+                h2 {
+                    text-align: center;
+                    font-size: $fsize1;
+                    color: $color1;
+                    margin-bottom: 0;
                 }
 
-                p{
+                p {
                     margin-top: 0;
                     font-size: 16px;
                 }
             }
         }
     }
+
     .dibujo {
         display: none;
     }
@@ -686,7 +739,7 @@ $colores in $mapa {
 
 /* tablet y ipad */
 @media only screen and (min-width:600px) and (max-width:1199px) {
-    
+
     .container-fluid {
         h1 {
             font-size: 30px;
@@ -704,9 +757,9 @@ $colores in $mapa {
         background-size: cover;
         padding: 20px;
         display: flex;
-        flex-wrap:wrap-reverse;
+        flex-wrap: wrap-reverse;
         text-shadow: 0 0 5px #000;
-        
+
         .nleft img {
             height: auto;
             width: 100%;
@@ -715,45 +768,49 @@ $colores in $mapa {
             margin-bottom: 15px;
         }
 
-        .nright h2{
+        .nright h2 {
             text-align: center;
             padding: 0;
             padding-top: 20px;
         }
 
-        .nright p{
+        .nright p {
             width: 100%;
             padding-right: 10px;
             margin: 0;
         }
+
         .main-seccion2 {
             height: auto;
 
             .nleft-seccion2 {
                 display: none;
-            }   
-            .nright-seccion2{ 
+            }
+
+            .nright-seccion2 {
                 text-align: left;
                 padding: 0;
                 text-shadow: 0 0 5px #000;
 
-                h2{
-                text-align: center;
-                font-size: $fsize2;
-                color: $color1;
-                margin-bottom: 0;
+                h2 {
+                    text-align: center;
+                    font-size: $fsize2;
+                    color: $color1;
+                    margin-bottom: 0;
                 }
 
-                p{
+                p {
                     margin-top: 0;
                     font-size: 16px;
                 }
             }
         }
-        .frases h2{
+
+        .frases h2 {
             color: $color5;
         }
     }
+
     .dibujo {
         display: none;
     }
@@ -867,7 +924,8 @@ $colores in $mapa {
             grid-area: img9;
         }
     }
-    .redes{
+
+    .redes {
         position: fixed;
         bottom: 25px;
         right: 25px;

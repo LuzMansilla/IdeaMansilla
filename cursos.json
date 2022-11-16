@@ -1,0 +1,22 @@
+[{
+        "id": 1,
+        "etapa": "Nivel 1",
+        "nombre": "Introduccion al Eneagrama",
+        "duracion": "8 clases",
+        "precio": 15000
+    },
+    {
+        "id": 2,
+        "etapa": "Nivel 2",
+        "nombre": "Energias Lejanas",
+        "duracion": "8 clases",
+        "precio": 15000
+    },
+    {
+        "id": 3,
+        "etapa": "Nivel 3",
+        "nombre": "Vinculación",
+        "duracion": "4 clases",
+        "precio": 8000
+    }
+]

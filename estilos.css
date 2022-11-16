@@ -182,6 +182,17 @@ section aside {
   padding-bottom: 20px;
   font-size: 30px;
 }
+section aside .finalizarCompra {
+  background-color: rgb(238, 131, 82);
+  color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+}
+section aside .columna-tabla {
+  color: whitesmoke;
+}
 section .article1-seccion3, section .article2-seccion3 {
   color: rgba(214, 61, 66, 0.768627451);
   --opacidad-negro: 0.5;
@@ -216,7 +227,6 @@ section .article2-seccion3 {
 }
 
 article {
-  background: -webkit-linear-gradient(to right, #000032, #67013a);
   background: linear-gradient(to right, #000032, #67013a);
   height: auto;
   width: 100%;
@@ -372,7 +382,7 @@ footer label {
 footer .row .form-control:focus {
   background-color: #58473A;
   border: none;
-  color: rgb(238, 131, 82);
+  color: aliceblue;
   font-weight: bold;
   border-bottom: black solid 2px;
   outline: none;
@@ -382,40 +392,78 @@ footer .row input {
   margin-bottom: 20px;
   background-color: #58473A;
   border: none;
-  color: rgb(238, 131, 82);
+  color: aliceblue;
   font-weight: bold;
   border-bottom: black solid 2px;
 }
-footer .row input::placeholder {
-  color: aliceblue;
+footer .row input::-moz-placeholder {
+  color: rgb(238, 131, 82);
   background-color: #58473A;
   border: none;
   padding: 0;
 }
+footer .row input:-ms-input-placeholder {
+  color: rgb(238, 131, 82);
+  background-color: #58473A;
+  border: none;
+  padding: 0;
+}
+footer .row input::placeholder {
+  color: rgb(238, 131, 82);
+  background-color: #58473A;
+  border: none;
+  padding: 0;
+}
+footer .row i {
+  float: right;
+}
+footer .row .formulario__grupo-correcto {
+  color: greenyellow;
+  opacity: 1;
+}
+footer .row .formulario__grupo-incorrecto {
+  color: red;
+}
+footer .row .formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+footer .row .formulario__input-error-activo {
+  display: block;
+}
 footer .row label {
-  color: aliceblue;
-}
-footer .row input[type=radio], footer .row [type=checkbox]:focus {
   color: rgb(238, 131, 82);
 }
-footer .row textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: #58473A;
-  border: none;
+footer .row input[type=radio],
+footer .row [type=checkbox]:focus {
   color: rgb(238, 131, 82);
-  font-weight: bold;
-  border-bottom: black solid 2px;
 }
-footer .row textarea::placeholder {
-  color: aliceblue;
-  background-color: #58473A;
-  border: none;
+footer .row h5 {
+  color: white;
+  padding: 20px;
+  font-size: 15px;
 }
-footer .row textarea:focus-visible {
-  outline: none;
+footer .row .formulario__mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #F66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
 }
-footer #enviar {
+footer .row .formulario__mensaje-activo {
+  display: block;
+}
+footer .row .formCorrecto {
+  font-size: 14px;
+  color: greenyellow;
+  display: none;
+}
+footer .row .formCorrecto-activo {
+  display: block;
+}
+footer #submit {
   height: 40px;
   width: auto;
   font-size: 20px;
@@ -431,7 +479,7 @@ footer #enviar {
   margin-left: 200px;
   margin-bottom: 50px;
 }
-footer #enviar:hover {
+footer #submit:hover {
   cursor: pointer;
   text-transform: capitalize;
   color: black;
@@ -710,6 +758,4 @@ footer .fa-whatsapp:hover {
     bottom: 25px;
     right: 25px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
